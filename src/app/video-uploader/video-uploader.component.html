@@ -1,0 +1,11 @@
+<div class="video-uploader">
+  <h2>Upload and Play Your Video</h2>
+  <input
+    type="file"
+    (change)="onFileSelected($event)"
+    accept=".mp4,.hevc,.ogg,.webm"
+  />
+  <div *ngIf="loadingMessage" class="loading">{{ loadingMessage }}</div>
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  <video id="video-player" controls autoplay></video>
+</div>

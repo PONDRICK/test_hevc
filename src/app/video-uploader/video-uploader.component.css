@@ -1,0 +1,24 @@
+.video-uploader {
+  text-align: center;
+  margin: 20px;
+}
+
+input[type="file"] {
+  margin: 10px 0;
+}
+
+.loading {
+  color: blue;
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+  margin: 10px 0;
+}
+
+video {
+  max-width: 100%;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
